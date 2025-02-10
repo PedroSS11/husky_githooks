@@ -1,2 +1,6 @@
 # .husky/pre-commit
+# Rodando o lint-staged
+npx lint-staged
+
+# Rodando os testes após o lint
 npm test
