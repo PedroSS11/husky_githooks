@@ -4,7 +4,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"message: PASSED\" && exit 0",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "eslint . --ext .js,.ts,.jsx,.tsx",
+    "lint:fix": "eslint . --ext .js,.ts,.jsx,.tsx --fix"
   },
   "lint-staged": {
     "*.js": "prettier --write",
@@ -17,6 +19,8 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.3",
     "husky": "^9.1.7"
   },
   "dependencies": {
