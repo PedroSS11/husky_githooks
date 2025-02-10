@@ -5,15 +5,15 @@
     "node": true
   },
   "extends": ["eslint:recommended", "plugin:prettier/recommended"],
+  "plugins": ["unused-imports", "prettier"],
   "parserOptions": {
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["prettier"],
   "rules": {
+    "no-unused-vars": ["warn"], // Aviso para variáveis não usadas
+    "unused-imports/no-unused-imports": "error", // Erro para imports não usados
     "prettier/prettier": "error",
-    "no-console": "warn",
-    "no-unused-vars": "error",
     "semi": ["error", "always"],
     "quotes": ["error", "single"]
   }
